@@ -1,0 +1,99 @@
+/* Mobile */
+@font-face {
+  font-family: "Belarus Regular";
+  src: local("Belarus Regular"), url("../Fonts/Belarus-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: local("Montserrat Regular"), url("../Fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: local("Montserrat Medium"), url("../Fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Light";
+  src: local("Montserrat Light"), url("../Fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+.header {
+  z-index: 50;
+  margin: 0 auto;
+  max-width: 1480px;
+  font-family: "Montserrat Regular", Arial, sans-serif;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0px;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.header__left ul {
+  display: flex;
+}
+.header__left ul li {
+  padding: 10px;
+  border-radius: 20px;
+}
+.header__left ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.header__left ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+@media (max-width: 468px) {
+  .header__left ul li {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header__left ul li {
+    display: none;
+  }
+}
+.header__right {
+  display: flex;
+  gap: 30px;
+}
+.header__right .header__phone {
+  display: flex;
+  flex-direction: column;
+}
+.header__right .header__phone .number {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.header__right .header__phone .text {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+@media (max-width: 650px) {
+  .header__right {
+    display: none;
+  }
+}

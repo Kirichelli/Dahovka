@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Belarus Regular";
+  src: local("Belarus Regular"), url("../Fonts/Belarus-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: local("Montserrat Regular"), url("../Fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: local("Montserrat Medium"), url("../Fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Light";
+  src: local("Montserrat Light"), url("../Fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+/* Mobile */
+.button {
+  font-family: "Montserrat Regular", Arial, sans-serif;
+  display: flex;
+  padding: 12px 28px;
+  gap: 12px;
+  border-radius: 48px;
+  border: 1px solid var(--white_opacity, rgba(255, 255, 255, 0.4));
+}
+.button:hover {
+  border: 1px solid var(--white, #fff);
+  background: rgb(255, 255, 255);
+}
+.button:hover .button__link {
+  color: #192e4e;
+}
+.button__find {
+  padding: 20px;
+}
+.button__link {
+  border: 1px solid var(--white, #fff);
+  border-radius: 48px;
+  display: flex;
+  padding: 12px 28px;
+  gap: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  z-index: 50;
+  text-transform: uppercase;
+}
+.button__link:hover {
+  border: 1px solid var(--white, #fff);
+  background: rgb(255, 255, 255);
+  color: #192e4e;
+}

@@ -1,0 +1,57 @@
+/* Mobile */
+@font-face {
+  font-family: "Belarus Regular";
+  src: local("Belarus Regular"), url("../Fonts/Belarus-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: local("Montserrat Regular"), url("../Fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: local("Montserrat Medium"), url("../Fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Light";
+  src: local("Montserrat Light"), url("../Fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+.booking {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+.booking__container {
+  margin: 0 auto;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 170px 180px 136px 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.booking__container .booking__icon {
+  max-width: 268px;
+  padding: 0px 0px 28px 0px;
+}
+.booking__container .booking__title {
+  font-family: "Belarus Regular", Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 104%;
+  text-transform: uppercase;
+  padding: 0px 0px 56px 0px;
+}
+.booking__container .booking__find .booking__registration {
+  opacity: 0;
+}
+.booking__container .booking__find .booking_guests {
+  opacity: 0;
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Belarus Regular";
+  src: local("Belarus Regular"),
+    url("../Fonts/Belarus-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: local("Montserrat Regular"),
+    url("../Fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: local("Montserrat Medium"),
+    url("../Fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat Light";
+  src: local("Montserrat Light"),
+    url("../Fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@mixin belarus-regular {
+  font-family: "Belarus Regular", Arial, sans-serif;
+}
+
+@mixin montserrat-regular {
+  font-family: "Montserrat Regular", Arial, sans-serif;
+}
+
+@mixin montserrat-medium {
+  font-family: "Montserrat Medium", Arial, sans-serif;
+}
+
+@mixin montserrat-light {
+  font-family: "Montserrat Light", Arial, sans-serif;
+}

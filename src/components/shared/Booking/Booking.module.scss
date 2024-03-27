@@ -1,0 +1,39 @@
+@import "../../../styles/mixins";
+@import "../../../styles/fonts.scss";
+.booking {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  &__container {
+    @include container;
+    margin: 0 auto;
+    padding: 170px 180px 136px 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .booking__icon {
+      max-width: 268px;
+      padding: 0px 0px 28px 0px;
+    }
+    .booking__title {
+      @include belarus-regular;
+      color: #fff;
+      text-align: center;
+      font-size: 90px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 104%;
+      text-transform: uppercase;
+      padding: 0px 0px 56px 0px;
+    }
+    .booking__find {
+      .booking__registration {
+        opacity: 0;
+      }
+      .booking_guests {
+        opacity: 0;
+      }
+    }
+  }
+}

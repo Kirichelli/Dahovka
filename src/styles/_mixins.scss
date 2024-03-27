@@ -1,0 +1,51 @@
+// Цвета
+$button-color: #ffffff;
+$button-active-color: #192e4e;
+$text-blue: #192e4e;
+
+// Точки для медиа-запросов
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// Контейнер с максимальной шириной
+@mixin container {
+  margin: 0 auto;
+  max-width: 1480px;
+}
+// @media (max-width: 991.98px) {
+//   @mixin container {
+//     max-width: 750px;
+//   }
+// }
+/* Mobile */
+// @media (max-width: 767.98px) {
+//   [class*="__container"] {
+//     max-width: none;
+//   }
+// }
+
+// Стили для текста
+@mixin text-styles {
+  color: $dark-color;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  &.large {
+    font-size: 20px;
+  }
+
+  &.small {
+    font-size: 14px;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+}

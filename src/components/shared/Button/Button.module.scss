@@ -1,0 +1,41 @@
+@import "../../../styles/fonts";
+@import "../../../styles/mixins";
+.button {
+  @include montserrat-regular;
+  display: flex;
+  padding: 12px 28px;
+  gap: 12px;
+  border-radius: 48px;
+  border: 1px solid var(--white_opacity, rgba(255, 255, 255, 0.4));
+  &:hover {
+    border: 1px solid var(--white, #fff);
+    background: rgba(255, 255, 255, 1);
+    .button__link {
+      color: $button-active-color;
+    }
+  }
+  &__find {
+    padding: 20px;
+  }
+  &__icon {
+  }
+}
+.button__link {
+  border: 1px solid var(--white, #fff);
+  border-radius: 48px;
+  display: flex;
+  padding: 12px 28px;
+  gap: 12px;
+  color: $button-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  z-index: 50;
+  text-transform: uppercase;
+  &:hover {
+    border: 1px solid var(--white, #fff);
+    background: rgba(255, 255, 255, 1);
+    color: $button-active-color;
+  }
+}
