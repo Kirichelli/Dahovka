@@ -21,7 +21,7 @@ const Navbar = () => {
             <Icon name={menuActive ? "close" : "menu"} />
           </Button>
           <nav>
-            <ul className={menuActive ? "" : css.menu}>
+            <ul className={css.menu}>
               {links.map((link, index) => (
                 <li key={index}>
                   <a href="#">{link.title}</a>

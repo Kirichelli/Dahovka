@@ -22,13 +22,12 @@
 .booking {
   position: relative;
   overflow: hidden;
-  z-index: -1;
 }
 .booking__container {
   margin: 0 auto;
   max-width: 1480px;
   margin: 0 auto;
-  padding: 170px 180px 136px 180px;
+  padding: 170px 50px 136px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +37,12 @@
   max-width: 268px;
   padding: 0px 0px 28px 0px;
 }
+@media (max-width: 468px) {
+  .booking__container .booking__icon {
+    margin-bottom: 16px;
+    max-width: 120px;
+  }
+}
 .booking__container .booking__title {
   font-family: "Belarus Regular", Arial, sans-serif;
   color: #fff;
@@ -46,12 +51,97 @@
   font-style: normal;
   font-weight: 400;
   line-height: 104%;
+  width: 100%;
   text-transform: uppercase;
   padding: 0px 0px 56px 0px;
 }
+@media (max-width: 468px) {
+  .booking__container .booking__title {
+    font-size: 46px;
+    line-height: 48px;
+  }
+}
+.booking__container .booking__find {
+  font-family: "Montserrat Regular", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 48px;
+  gap: 12px;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+}
 .booking__container .booking__find .booking__registration {
-  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4px;
+  padding-right: 20px;
+}
+.booking__container .booking__find .booking__registration .booking_in {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+  padding: 9px 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 48px;
+}
+.booking__container .booking__find .booking__registration .booking_out {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+  padding: 9px 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 48px;
 }
 .booking__container .booking__find .booking_guests {
-  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 13px 20px 13px 28px;
+  height: 48px;
+}
+.booking__container .booking__find .booking_guests .guests__title {
+  color: #ffffff;
+  font-family: "Montserrat Regular", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+  border-radius: 48px;
+}
+@media (max-width: 468px) {
+  .booking__container .booking__find .booking_guests {
+    display: none;
+  }
+}
+@media (max-width: 468px) {
+  .booking__container .booking__find .booking__button {
+    display: none;
+  }
+}
+@media (max-width: 468px) {
+  .booking__container .booking__find {
+    padding: 0;
+  }
+}
+@media (max-width: 468px) {
+  .booking__container {
+    padding: 170px 80px 50px 80px;
+  }
 }

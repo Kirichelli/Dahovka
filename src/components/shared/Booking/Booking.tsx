@@ -13,14 +13,18 @@ const Booking = () => {
           <div className={css.booking__title}>любимый отель в горах Адыгеи</div>
           <div className={css.booking__find}>
             <div className={css.booking__registration}>
-              <div className={css.booking_in}>
-                <input type="text" />
-              </div>
+              <div className={css.booking_in}>Заезд</div>
               <Icon name="arrow" />
-              <div className={css.booking_out}></div>
+              <div className={css.booking_out}>Выезд</div>
+              <Icon name="calendar" />
             </div>
-            <div className={css.booking_guests}></div>
-            <Button>Забронировать номер</Button>
+            <div className={css.booking_guests}>
+              <div className={css.guests__title}>2 взрослых, 0 детей</div>
+              <Icon name="people" />
+            </div>
+            <div className={css.booking__button}>
+              <Button href="#">Забронировать номер</Button>
+            </div>
           </div>
         </div>
       </div>

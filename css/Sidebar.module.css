@@ -43,9 +43,6 @@
   transform: translateX(0);
   transition: all 0.4s;
 }
-.sidebar__active body {
-  overflow: hidden;
-}
 .sidebar__content {
   width: 55%;
   height: 100%;
@@ -139,6 +136,11 @@
 @media (max-width: 468px) {
   .sidebar__buttons .buttons__block {
     flex-direction: row;
+  }
+}
+@media (max-width: 468px) {
+  .sidebar__buttons {
+    background: #2d56bf;
   }
 }
 @media (max-width: 468px) {
