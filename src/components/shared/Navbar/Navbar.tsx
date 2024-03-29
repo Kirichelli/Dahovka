@@ -1,15 +1,15 @@
 import { useState } from "react";
-import Button from "../Button/Button";
+import Button from "../../shared/Button/Button";
 import css from "./Navbar.module.scss";
 import Icon from "../Icons/Icon";
 import Sidebar from "../Sidebar/Sidebar";
+const links = [
+  { title: "Об отеле" },
+  { title: "Номера" },
+  { title: "Ресторан" },
+  { title: "Контакты" },
+];
 const Navbar = () => {
-  const links = [
-    { title: "Об отеле" },
-    { title: "Номера" },
-    { title: "Ресторан" },
-    { title: "Контакты" },
-  ];
   const [menuActive, setMenuActive] = useState(false);
   return (
     <>

@@ -1,9 +1,9 @@
 import css from "./Location.module.scss";
-import mountains from "../../assets/mountains.png";
-import Icon from "../Icons/Icon";
-import Mount from "../../../assets/image18.png";
+import mountains from "../assets/mountains.png";
+import Icon from "../shared/Icons/Icon";
+import Mount from "../../assets/image18.png";
 import { useEffect, useRef, useState } from "react";
-import { lerp } from "../../helpers/MathUtils";
+import { lerp } from "../helpers/MathUtils";
 const services = [
   {
     icon: "service_1",
@@ -25,7 +25,6 @@ const Location = () => {
         const progress = Math.min(Math.max(-animStart / animlength, 0), 1);
         const shift = lerp(0, 100, progress);
         element.style.transform = `translateX(calc(-50% - ${shift}%))`;
-        console.log(shift);
       };
       window.addEventListener("scroll", handleScroll);
       return () => {

@@ -1,11 +1,12 @@
-@import "../../../styles/mixins";
-@import "../../../styles/fonts.scss";
+@import "../../styles/index.scss";
+@import "../../styles/mixins";
 .booking {
   position: relative;
   overflow: hidden;
   // z-index: -1;
   &__container {
     @include container;
+    height: 100vh;
     margin: 0 auto;
     padding: 170px 50px 136px 50px;
     display: flex;
@@ -44,7 +45,6 @@
       padding: 15px;
       border-radius: 48px;
       gap: 12px;
-
       backdrop-filter: blur(25px);
       .booking__registration {
         display: flex;
@@ -113,6 +113,66 @@
     }
     @media (max-width: 468px) {
       padding: 170px 80px 50px 80px;
+    }
+    .arrow {
+      padding-top: 40px;
+      rect {
+        overflow: hidden;
+      }
+      path {
+        animation: bounce 2.66s ease infinite;
+      }
+
+      @keyframes bounce {
+        80%,
+        100% {
+          -moz-transform: translateY(70px);
+          -ms-transform: translateY(70px);
+          -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+        }
+        40%,
+        50% {
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+        0% {
+          -moz-transform: translateY(-40px);
+          -ms-transform: translateY(-40px);
+          -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+        }
+      }
+
+      @-webkit-keyframes bounce {
+        80%,
+        100% {
+          -moz-transform: translateY(70px);
+          -ms-transform: translateY(70px);
+          -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+        }
+        40%,
+        50% {
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+        0% {
+          -moz-transform: translateY(-40px);
+          -ms-transform: translateY(-40px);
+          -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+        }
+      }
+
+      .bounce {
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+      }
     }
   }
 }

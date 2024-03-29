@@ -1,4 +1,4 @@
-@import "../../../styles/fonts";
+@import "../../../styles/index.scss";
 @import "../../../styles/mixins";
 .button {
   @include montserrat-regular;
@@ -33,6 +33,9 @@
   line-height: 160%;
   z-index: 50;
   text-transform: uppercase;
+  @media (max-width: 468px) {
+    display: none;
+  }
   &:hover {
     border: 1px solid var(--white, #fff);
     background: rgba(255, 255, 255, 1);

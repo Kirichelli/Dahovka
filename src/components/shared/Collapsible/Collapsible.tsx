@@ -10,7 +10,6 @@ export interface CollapsibleProps {
 const Collapsible = ({ label, list, index }: CollapsibleProps) => {
   const [height, setHeight] = useState(0);
   const [isClicked, setIsClicked] = useState(false);
-
   const elementRef = useRef<HTMLDivElement | null>(null);
 
   const toggle = () => {

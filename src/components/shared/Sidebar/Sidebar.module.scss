@@ -1,4 +1,4 @@
-@import "../../../styles/fonts";
+@import "../../../styles/index.scss";
 @import "../../../styles/mixins";
 
 .sidebar {
@@ -85,8 +85,6 @@
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(2px);
-    // background: rgba(0, 0, 0, 0.3);
-    // filter: brightness(20%);
     position: absolute;
     transform: none;
     @media (max-width: 468px) {
@@ -109,17 +107,12 @@
 
       @media (max-width: 468px) {
         min-width: none;
-      }
-      @media (max-width: 468px) {
         flex-direction: row;
       }
     }
     @media (max-width: 468px) {
       background: #2d56bf;
     }
-  }
-  @media (max-width: 768px) {
-    // padding: 64px 9px;
   }
   @media (max-width: 468px) {
     width: 100%;

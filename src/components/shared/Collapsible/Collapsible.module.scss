@@ -1,4 +1,5 @@
-@import "../../../styles/fonts";
+@import "../../../styles/index.scss";
+@import "../../../styles/mixins";
 .drop {
   position: relative;
   &__content {
@@ -49,7 +50,6 @@
   }
   .block {
     @include montserrat-regular;
-    // height: 200px;
     transition: height ease 0.9s;
     overflow: hidden;
   }
@@ -64,7 +64,7 @@
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
-      line-height: 24px; /* 171.429% */
+      line-height: 24px;
       text-transform: uppercase;
     }
   }

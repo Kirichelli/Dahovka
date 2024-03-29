@@ -1,4 +1,4 @@
-import sample from "./sample.mp4";
+import sample from "../../assets/sample.mp4";
 import css from "./Video.module.scss";
 const Video = () => {
   return (

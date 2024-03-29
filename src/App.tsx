@@ -1,19 +1,18 @@
-import Video from "./components/shared/BackVideo/Video";
-import Booking from "./components/shared/Booking/Booking";
-import Location from "./components/shared/Location/Location";
+import Booking from "./components/Booking/Booking";
+import Location from "./components/Location/Location";
 import Navbar from "./components/shared/Navbar/Navbar";
-import Sidebar from "./components/shared/Sidebar/Sidebar";
-import Icon from "./components/shared/Icons/Icon";
 import css from "./App.module.scss";
+import Slider from "./components/Slider/Slider";
+import HorScroll from "./components/HorScroll/HorScroll";
 function App() {
   return (
     <div className={css.wrapper}>
       <Navbar />
       <Booking />
       <Location />
-      <Booking />
-      <Booking />
-      <Booking />
+      <Slider />
+      <HorScroll />
+      <Location />
     </div>
   );
 }
